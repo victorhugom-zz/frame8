@@ -1,11 +1,13 @@
 var mongoose = require('mongoose');
-var config = require('./config');
+var config = require('./config')
 
 module.exports.config = function (config) { 
 
     var db = mongoose.connect(config.database.url);
 
 };
+
+module.exports.apiBuilder =return require('../lib/api/apibuilder');
 
 module.exports.database = {
     admin: require('./lib/models/admin'),
