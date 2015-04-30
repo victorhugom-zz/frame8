@@ -7,7 +7,7 @@ module.exports.config = function (config) {
 
 };
 
-module.exports.apiBuilder =return require('../lib/api/apibuilder');
+module.exports.apiBuilder = require('./lib/api/apibuilder');
 
 module.exports.database = {
     admin: require('./lib/models/admin'),

@@ -1,0 +1,14 @@
+{
+  "name": "frame8.simpleinstance",
+  "version": "0.0.1",
+  "description": "Testing Frame8",
+  "main": "admin.cpf.instance.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+   "devDependencies": {
+    "frame8": "0.0.2"
+  }
+}
