@@ -61,8 +61,4 @@ Thumbs.db
 packages
 final/build/node_modules/
 
-
-build
-node_modules
-npm-debug.log
 lib/apidocs/
