@@ -36,6 +36,18 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('build/fonts'));
 });
 
+// Styles
+gulp.task('styles', function () {
+  return gulp.src('src/less/app.less')
+    .pipe($.less({
+      style: 'expanded'
+    }))
+    //.pipe($.uncss({ html: ['app/index.html'], ignore: ['*\.in']}))
+    .pipe($.autoprefixer('last 1 version'))
+    .pipe(gulp.dest('build/styles'))
+    .pipe($.size());
+});
+
 // Static files
 gulp.task('assets', function() {
   src.assets = [
@@ -88,7 +100,7 @@ gulp.task('bundle', function(cb) {
 
 // Build the app from source code
 gulp.task('build', ['clean'], function(cb) {
-  runSequence(['vendor', 'assets', 'bundle'], cb);
+  runSequence(['vendor','styles', 'assets', 'bundle'], cb);
 });
 
 // Build and start watching for modifications

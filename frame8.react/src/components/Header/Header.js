@@ -5,6 +5,7 @@ import styles from './Header.less'; // eslint-disable-line no-unused-vars
 import withStyles from '../../decorators/withStyles'; // eslint-disable-line no-unused-vars
 import Link from '../../utils/Link';
 import Navigation from '../Navigation';
+import Button from 'react-bootstrap/lib/Button';
 
 @withStyles(styles)
 class Header {
@@ -15,10 +16,11 @@ class Header {
         <div className="Header-container">
           <a className="Header-brand" href="/" onClick={Link.handleClick}>
             <img className="Header-brandImg" src={require('./logo-small.png')} width="38" height="38" alt="React" />
-            <span className="Header-brandTxt">V8 is Learning React</span>
+            <span className="Header-brandTxt">V8</span>
           </a>
           <Navigation className="Header-nav" />
           <div className="Header-banner">
+            <span> ... is Learning</span>
             <h1 className="Header-bannerTitle">React</h1>
             <p className="Header-bannerDesc">Complex web apps made easy? Who knows</p>
           </div>
