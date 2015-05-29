@@ -5,7 +5,6 @@ import styles from './Header.less'; // eslint-disable-line no-unused-vars
 import withStyles from '../../decorators/withStyles'; // eslint-disable-line no-unused-vars
 import Link from '../../utils/Link';
 import Navigation from '../Navigation';
-import Button from 'react-bootstrap/lib/Button';
 
 @withStyles(styles)
 class Header {

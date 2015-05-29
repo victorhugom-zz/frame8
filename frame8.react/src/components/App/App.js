@@ -14,6 +14,7 @@ import RegisterPage from '../RegisterPage';
 import NotFoundPage from '../NotFoundPage';
 import Feedback from '../Feedback';
 import Footer from '../Footer';
+import CreateAdmin from '../CreateAdmin';
 
 const pages = { ContentPage, ContactPage, LoginPage, RegisterPage, NotFoundPage };
 
@@ -68,6 +69,7 @@ class App {
         {component}
         <Feedback />
         <Footer />
+        <CreateAdmin/>
       </div>
     ) : <NotFoundPage />;
   }
