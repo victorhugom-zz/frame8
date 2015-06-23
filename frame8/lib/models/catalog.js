@@ -24,7 +24,6 @@
                 required: true
             },
             active: Boolean,
-            //products: [{ type: ObjectId, ref: 'Product' }]
             products: [{ id: { type: ObjectId, ref: 'Product' }, price: Number }]
         });
         

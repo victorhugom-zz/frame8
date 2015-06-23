@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
    "devDependencies": {
-    "frame8": "0.0.2"
+      "frame8": "0.0.2",
   }
 }

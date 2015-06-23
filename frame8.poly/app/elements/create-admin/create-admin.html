@@ -1,35 +1,35 @@
 <dom-module id="create-admin">
-    <style>
-    :host {
-        display: block;
-    }
+<style>
+:host {
+  display: block;
+}
 
-    @media (max-width: 600px) {
-        h1.paper-font-display1 {
-            font-size: 24px;
-        }
-    }
-    </style>
-    <template>
-        <div class="horizontal-section">
-            <form is="iron-form" id="formPost" method="POST" handle-as="json" action="http://localhost:8080/admin">
-                <paper-input name="name" label="Name" required></paper-input>
-                <paper-input name="email" type="email" label="Email" required></paper-input>
-                <paper-input name="password" type="password" label="Password" required></paper-input>
-                <br>
-                <paper-button raised onclick="clickHandler(event)">Submit</paper-button>
-            </form>
-        </div>
-    </template>
+@media (max-width: 600px) {
+  h1.paper-font-display1 {
+    font-size: 24px;
+  }
+}
+</style>
+<template>
+  <div class="horizontal-section">
+    <form is="iron-form" id="formPost" method="POST" handle-as="json" action="http://localhost:8080/admin">
+      <paper-input name="name" label="Name" required></paper-input>
+      <paper-input name="email" type="email" label="Email" required></paper-input>
+      <paper-input name="password" type="password" label="Password" required></paper-input>
+      <br>
+      <paper-button raised onclick="clickHandler(event)">Submit</paper-button>
+    </form>
+  </div>
+</template>
 </dom-module>
 <script>
 (function() {
-    Polymer({
-        is: 'create-admin',
-    });
+  Polymer({
+    is: 'create-admin',
+  });
 })();
 
 function clickHandler(event) {
-    Polymer.dom(event).localTarget.parentElement.submit();
+  Polymer.dom(event).localTarget.parentElement.submit();
 }
 </script>
