@@ -4,7 +4,6 @@ var config = require('./config')
 module.exports.config = function (config) { 
 
     var db = mongoose.connect(config.database.url);
-
 };
 
 module.exports.apiBuilder = require('./lib/api/apibuilder');

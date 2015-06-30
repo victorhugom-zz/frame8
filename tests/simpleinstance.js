@@ -1,5 +1,5 @@
 // using the framework node module
-var frame8 = require('../frame8/');
+var frame8 = require('../../frame8/');
 
 // condigurations
 var config = {
