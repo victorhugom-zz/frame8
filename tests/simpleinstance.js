@@ -13,7 +13,7 @@ var config = {
 frame8.config(config);
 
 // building the database
-frame8.database.admin.build();
+frame8.database.user.build();
 frame8.database.customer.build();
 frame8.database.cart.build();
 frame8.database.catalog.build();
