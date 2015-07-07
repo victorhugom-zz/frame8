@@ -186,58 +186,10 @@
     "groupTitle": "Cart"
   },
   {
-    "type": "get",
-    "url": "/catalog/activate/:id",
-    "title": "activate",
-    "description": "<p>set the catalog as active</p> ",
-    "name": "activate",
-    "group": "Catalog",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "<p>String</p> ",
-            "optional": false,
-            "field": "id",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "optional": false,
-            "field": "Success",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "Catalog",
-            "description": "<p>not found</p> "
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "lib/models/catalog.js",
-    "groupTitle": "Catalog"
-  },
-  {
     "type": "post",
     "url": "/catalog/",
     "title": "create",
-    "description": "<p>create an catalog</p> ",
+    "description": "<p>create a catalog</p> ",
     "name": "create",
     "group": "Catalog",
     "parameter": {
@@ -248,14 +200,63 @@
             "type": "<p>String</p> ",
             "optional": false,
             "field": "name",
-            "description": ""
+            "description": "<p>Catalog Name</p> "
           },
           {
             "group": "Parameter",
-            "type": "<p>Boolena</p> ",
+            "type": "<p>Boolean</p> ",
             "optional": false,
             "field": "active",
-            "description": ""
+            "description": "<p>Catalog Status</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Date</p> ",
+            "optional": false,
+            "field": "validUntil",
+            "description": "<p>Catalog expire date</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "products",
+            "description": "<p>Product List</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.id",
+            "description": "<p>Product Id</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.name",
+            "description": "<p>Product Name</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.decription",
+            "description": "<p>Product Descrption</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String[]</p> ",
+            "optional": false,
+            "field": "product.categories",
+            "description": "<p>Product Categories</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.quantityAvailable",
+            "description": "<p>Product Quantity Available</p> "
           }
         ]
       }
@@ -279,55 +280,7 @@
             "group": "Error 4xx",
             "optional": false,
             "field": "400",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "lib/models/catalog.js",
-    "groupTitle": "Catalog"
-  },
-  {
-    "type": "get",
-    "url": "/catalog/deactivate/:id",
-    "title": "deactivate",
-    "description": "<p>set the catalog as active</p> ",
-    "name": "deactivate",
-    "group": "Catalog",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "<p>String</p> ",
-            "optional": false,
-            "field": "id",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "optional": false,
-            "field": "Success",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "Catalog",
-            "description": "<p>not found</p> "
+            "description": "<p>Error</p> "
           }
         ]
       }
@@ -361,9 +314,24 @@
         "Success 200": [
           {
             "group": "Success 200",
+            "type": "<p>String</p> ",
             "optional": false,
-            "field": "Catalog",
-            "description": ""
+            "field": "name",
+            "description": "<p>Catalog Name</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Boolean</p> ",
+            "optional": false,
+            "field": "active",
+            "description": "<p>Catalog Status</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Date</p> ",
+            "optional": false,
+            "field": "validUntil",
+            "description": "<p>Catalog expire date</p> "
           }
         ]
       }
@@ -399,6 +367,34 @@
             "optional": false,
             "field": "200",
             "description": "<p>Success</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "catalogs",
+            "description": "<p>Catalog List</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "catalog.name",
+            "description": "<p>Catalog Name</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Boolean</p> ",
+            "optional": false,
+            "field": "catalog.active",
+            "description": "<p>Catalog Status</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Date</p> ",
+            "optional": false,
+            "field": "catalog.validUntil",
+            "description": "<p>Catalog expire date</p> "
           }
         ]
       }
@@ -410,7 +406,7 @@
             "group": "Error 4xx",
             "optional": false,
             "field": "400",
-            "description": "<p>Catalog not found</p> "
+            "description": "<p>Error</p> "
           }
         ]
       }
@@ -481,29 +477,64 @@
             "group": "Parameter",
             "type": "<p>String</p> ",
             "optional": false,
-            "field": "id",
-            "description": ""
-          },
-          {
-            "group": "Parameter",
-            "type": "<p>String</p> ",
-            "optional": false,
-            "field": "email",
-            "description": ""
-          },
-          {
-            "group": "Parameter",
-            "type": "<p>String</p> ",
-            "optional": false,
             "field": "name",
-            "description": ""
+            "description": "<p>Catalog Name</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Boolean</p> ",
+            "optional": false,
+            "field": "active",
+            "description": "<p>Catalog Status</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Date</p> ",
+            "optional": false,
+            "field": "validUntil",
+            "description": "<p>Catalog expire date</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "products",
+            "description": "<p>Product List</p> "
           },
           {
             "group": "Parameter",
             "type": "<p>String</p> ",
             "optional": false,
-            "field": "password",
-            "description": ""
+            "field": "product.id",
+            "description": "<p>Product Id</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.name",
+            "description": "<p>Product Name</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.decription",
+            "description": "<p>Product Descrption</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String[]</p> ",
+            "optional": false,
+            "field": "product.categories",
+            "description": "<p>Product Categories</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.quantityAvailable",
+            "description": "<p>Product Quantity Available</p> "
           }
         ]
       }
@@ -1856,83 +1887,6 @@
   },
   {
     "type": "get",
-    "url": "/party/sellsByProduct/?ids",
-    "title": "sells by product",
-    "description": "<p>sells of parties grouped by product</p> ",
-    "name": "sellsByProduct",
-    "group": "Party",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "<p>String[]</p> ",
-            "optional": false,
-            "field": "id",
-            "description": "<p>parties ids</p> "
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "<p>Object</p> ",
-            "optional": false,
-            "field": "product",
-            "description": "<p>Product</p> "
-          },
-          {
-            "group": "Success 200",
-            "type": "<p>String</p> ",
-            "optional": false,
-            "field": "product.id",
-            "description": "<p>Product Id</p> "
-          },
-          {
-            "group": "Success 200",
-            "type": "<p>String</p> ",
-            "optional": false,
-            "field": "product.name",
-            "description": "<p>Product Name</p> "
-          },
-          {
-            "group": "Success 200",
-            "type": "<p>Number</p> ",
-            "optional": false,
-            "field": "product.raised",
-            "description": "<p>Ammount raised by the Product</p> "
-          },
-          {
-            "group": "Success 200",
-            "type": "<p>Number</p> ",
-            "optional": false,
-            "field": "product.quantity",
-            "description": "<p>Quantity of Products sold</p> "
-          }
-        ]
-      }
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "400",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "lib/models/party.js",
-    "groupTitle": "Party"
-  },
-  {
-    "type": "get",
     "url": "/party/sellsByPaymentType/?ids",
     "title": "sells by payment type",
     "description": "<p>sells of parties grouped by payment type</p> ",
@@ -1988,6 +1942,83 @@
             "optional": false,
             "field": "product.quantity",
             "description": "<p>Quantity sold with this Payment</p> "
+          }
+        ]
+      }
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "400",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "lib/models/party.js",
+    "groupTitle": "Party"
+  },
+  {
+    "type": "get",
+    "url": "/party/sellsByProduct/?ids",
+    "title": "sells by product",
+    "description": "<p>sells of parties grouped by product</p> ",
+    "name": "sellsByProduct",
+    "group": "Party",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String[]</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>parties ids</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Object</p> ",
+            "optional": false,
+            "field": "product",
+            "description": "<p>Product</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.id",
+            "description": "<p>Product Id</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.name",
+            "description": "<p>Product Name</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "product.raised",
+            "description": "<p>Ammount raised by the Product</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "product.quantity",
+            "description": "<p>Quantity of Products sold</p> "
           }
         ]
       }
