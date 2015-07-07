@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-apidoc": "^0.10.0",
+    "grunt-apidoc": "^0.10.1",
     "mocha": "*",
     "chai": "1.10.0"
   },
@@ -35,5 +35,10 @@
   ],
   "bugs": {
     "url": "https://github.com/victorhugom/frame8/issues"
+  },
+  "apidoc": {
+    "title": "Frame 8 api docs",
+    "url": "http://localhost:8080",
+    "sampleUrl": "http://localhost:8080"
   }
 }
