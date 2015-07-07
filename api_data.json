@@ -401,7 +401,14 @@
             "description": "<p>Product Quantity Available</p> "
           }
         ]
-      }
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"active\": true,\n    \"id\": \"5595b081441a09b023377ba0\"\n    \"created_at\": \"2015-07-02T21:43:29.172Z\",\n    \"updated_at\": \"2015-07-02T21:48:33.514Z\",\n    \"name\": \"Festa T\",\n    \"validUntil\": \"2015-07-09T03:00:00.000Z\",\n    \"products\": [\n        {\n            \"_id\": \"559574b033d01ee42151be9b\",\n            \"name\": \"El Jimador\",\n            \"price\": 23,\n            \"quantityAvailable\": 10,\n            \"categories\": [\n                \"drink\"\n            ]\n        },\n        {\n            \"_id\": \"559574a133d01ee42151be9a\",\n            \"name\": \"Santa Dose\",\n            \"price\": 23,\n            \"quantityAvailable\": 10,\n            \"categories\": [\n                \"drink\"\n            ]\n        },\n        {\n            \"_id\": \"5595749133d01ee42151be99\",\n            \"name\": \"Smirnoff\",\n            \"price\": 70,\n            \"quantityAvailable\": 10,\n            \"categories\": [\n                \"drink\"\n            ]\n        },\n        {\n            \"_id\": \"5595748833d01ee42151be98\",\n            \"name\": \"Belvedere 1l\",\n            \"price\": 130,\n            \"quantityAvailable\": 10,\n            \"categories\": [\n                \"drink\"\n            ]\n        },\n        {\n            \"_id\": \"5595747e33d01ee42151be97\",\n            \"name\": \"Belvedere\",\n            \"price\": 240,\n            \"quantityAvailable\": 10,\n            \"categories\": [\n                \"drink\"\n            ]\n        }\n    ],\n}",
+          "type": "json"
+        }
+      ]
     },
     "error": {
       "fields": {
@@ -2021,7 +2028,14 @@
             "description": ""
           }
         ]
-      }
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"created_at\": \"2015-07-02T17:28:16.412Z\",\n    \"updated_at\": \"2015-07-02T17:28:16.412Z\",\n    \"name\": \"El Jimador\",\n    \"price\": 23,\n    \"catalogs\": [],\n    \"__v\": 0,\n    \"active\": true,\n    \"mediaFiles\": [],\n    \"categories\": [\n        \"drink\"\n    ],\n    \"id\": \"559574b033d01ee42151be9b\"\n},",
+          "type": "json"
+        }
+      ]
     },
     "error": {
       "fields": {
@@ -2181,7 +2195,14 @@
             "description": ""
           }
         ]
-      }
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "[\n    {\n        \"created_at\": \"2015-07-02T17:28:16.412Z\",\n        \"updated_at\": \"2015-07-02T17:28:16.412Z\",\n        \"name\": \"El Jimador\",\n        \"price\": 23,\n        \"catalogs\": [],\n        \"__v\": 0,\n        \"active\": true,\n        \"mediaFiles\": [],\n        \"categories\": [\n            \"drink\"\n        ],\n        \"id\": \"559574b033d01ee42151be9b\"\n    },\n    {\n        \"created_at\": \"2015-07-02T17:27:36.447Z\",\n        \"updated_at\": \"2015-07-02T17:27:36.447Z\",\n        \"name\": \"Belvedere 1l\",\n        \"price\": 130,\n        \"catalogs\": [],\n        \"__v\": 0,\n        \"active\": true,\n        \"mediaFiles\": [],\n        \"composition\": [],\n        \"categories\": [\n            \"drink\"\n        ],\n        \"id\": \"5595748833d01ee42151be98\"\n    }\n]",
+          "type": "json"
+        }
+      ]
     },
     "error": {
       "fields": {
@@ -2254,112 +2275,6 @@
     "sampleRequest": [
       {
         "url": "http://localhost:8080/product/:id"
-      }
-    ]
-  },
-  {
-    "type": "get",
-    "url": "/product/setAsAvailable/:id",
-    "title": "set as available",
-    "description": "<p>set the product as available</p> ",
-    "name": "setAsAvailable",
-    "group": "Product",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "<p>String</p> ",
-            "optional": false,
-            "field": "id",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "optional": false,
-            "field": "Success",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "Product",
-            "description": "<p>not found</p> "
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "lib/models/product.js",
-    "groupTitle": "Product",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:8080/product/setAsAvailable/:id"
-      }
-    ]
-  },
-  {
-    "type": "get",
-    "url": "/product/setAsaUnvailable/:id",
-    "title": "set as unavailable",
-    "description": "<p>set the product as unavailable</p> ",
-    "name": "setAsUnAvailable",
-    "group": "Product",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "<p>String</p> ",
-            "optional": false,
-            "field": "id",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "optional": false,
-            "field": "Success",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "Product",
-            "description": "<p>not found</p> "
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "lib/models/product.js",
-    "groupTitle": "Product",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:8080/product/setAsaUnvailable/:id"
       }
     ]
   },
@@ -2499,7 +2414,14 @@
             "description": ""
           }
         ]
-      }
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"created_at\": \"2015-07-02T17:28:16.412Z\",\n    \"updated_at\": \"2015-07-02T17:28:16.412Z\",\n    \"name\": \"El Jimador\",\n    \"price\": 23,\n    \"catalogs\": [],\n    \"active\": true,\n    \"mediaFiles\": [],\n    \"categories\": [\n        \"drink\"\n    ],\n    \"id\": \"559574b033d01ee42151be9b\"\n},",
+          "type": "json"
+        }
+      ]
     },
     "error": {
       "fields": {
@@ -2519,66 +2441,6 @@
     "sampleRequest": [
       {
         "url": "http://localhost:8080/product/"
-      }
-    ]
-  },
-  {
-    "type": "post",
-    "url": "/product/updateprice/",
-    "title": "update price",
-    "description": "<p>update product price</p> ",
-    "name": "updatePrice",
-    "group": "Product",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "<p>String</p> ",
-            "optional": false,
-            "field": "id",
-            "description": ""
-          },
-          {
-            "group": "Parameter",
-            "type": "<p>Number</p> ",
-            "optional": false,
-            "field": "price",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "optional": false,
-            "field": "Success",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "Product",
-            "description": "<p>not found</p> "
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "lib/models/product.js",
-    "groupTitle": "Product",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:8080/product/updateprice/"
       }
     ]
   },
@@ -2672,60 +2534,6 @@
   },
   {
     "type": "get",
-    "url": "/user/email/:email",
-    "title": "get by email",
-    "description": "<p>get user by his email</p> ",
-    "name": "getByEmail",
-    "group": "User",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "<p>String</p> ",
-            "optional": false,
-            "field": "email",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "<p>Object</p> ",
-            "optional": false,
-            "field": "User",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "User",
-            "description": "<p>not found</p> "
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "lib/models/user.js",
-    "groupTitle": "User",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:8080/user/email/:email"
-      }
-    ]
-  },
-  {
-    "type": "get",
     "url": "/user/:id",
     "title": "get",
     "description": "<p>get an user</p> ",
@@ -2770,7 +2578,14 @@
             "description": "<p>Username, to login</p> "
           }
         ]
-      }
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"_id\": \"559a86c0dc6ecd4c126aff87\",\n    \"created_at\": \"2015-07-06T13:46:40.584Z\",\n    \"updated_at\": \"2015-07-06T13:46:40.584Z\",\n    \"name\": \"cashier\",\n    \"role\": \"CASHIER\",\n    \"username\": \"cashier\",\n    \"__v\": 0,\n    \"active\": true,\n    \"id\": \"559a86c0dc6ecd4c126aff87\"\n}",
+          "type": "json"
+        }
+      ]
     },
     "error": {
       "fields": {
@@ -2810,7 +2625,14 @@
             "description": "<p>Success</p> "
           }
         ]
-      }
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "[\n   {\n       \"_id\": \"559a86c0dc6ecd4c126aff87\",\n       \"created_at\": \"2015-07-06T13:46:40.584Z\",\n       \"updated_at\": \"2015-07-06T13:46:40.584Z\",\n       \"name\": \"cashier\",\n       \"role\": \"CASHIER\",\n       \"username\": \"cashier\",\n       \"__v\": 0,\n       \"active\": true,\n       \"id\": \"559a86c0dc6ecd4c126aff87\"\n   },\n   {\n       \"_id\": \"559a860adc6ecd4c126aff84\",\n       \"created_at\": \"2015-07-06T13:43:38.567Z\",\n       \"updated_at\": \"2015-07-06T13:43:38.567Z\",\n       \"name\": \"Admin\",\n       \"role\": \"ADMIN\",\n       \"username\": \"admin\",\n       \"__v\": 0,\n       \"active\": true,\n       \"id\": \"559a860adc6ecd4c126aff84\"\n   }\n]",
+          "type": "json"
+        }
+      ]
     },
     "error": {
       "fields": {
@@ -3005,7 +2827,14 @@
             "description": ""
           }
         ]
-      }
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"_id\": \"559a86c0dc6ecd4c126aff87\",\n    \"created_at\": \"2015-07-06T13:46:40.584Z\",\n    \"updated_at\": \"2015-07-06T13:46:40.584Z\",\n    \"name\": \"cashier\",\n    \"role\": \"CASHIER\",\n    \"username\": \"cashier\",\n    \"__v\": 0,\n    \"active\": true,\n    \"id\": \"559a86c0dc6ecd4c126aff87\"\n}",
+          "type": "json"
+        }
+      ]
     },
     "error": {
       "fields": {
