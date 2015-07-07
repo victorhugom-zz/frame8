@@ -52,7 +52,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/cart.js",
-    "groupTitle": "Cart"
+    "groupTitle": "Cart",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/cart/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -100,7 +105,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/cart.js",
-    "groupTitle": "Cart"
+    "groupTitle": "Cart",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/cart/:id"
+      }
+    ]
   },
   {
     "type": "get",
@@ -135,7 +145,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/cart.js",
-    "groupTitle": "Cart"
+    "groupTitle": "Cart",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/cart/?limit&skip"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -183,7 +198,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/cart.js",
-    "groupTitle": "Cart"
+    "groupTitle": "Cart",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/cart/:id"
+      }
+    ]
   },
   {
     "type": "post",
@@ -287,7 +307,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/catalog.js",
-    "groupTitle": "Catalog"
+    "groupTitle": "Catalog",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/catalog/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -332,6 +357,48 @@ define({ "api": [
             "optional": false,
             "field": "validUntil",
             "description": "<p>Catalog expire date</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "products",
+            "description": "<p>Product List</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.id",
+            "description": "<p>Product Id</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.name",
+            "description": "<p>Product Name</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.decription",
+            "description": "<p>Product Descrption</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String[]</p> ",
+            "optional": false,
+            "field": "product.categories",
+            "description": "<p>Product Categories</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.quantityAvailable",
+            "description": "<p>Product Quantity Available</p> "
           }
         ]
       }
@@ -350,7 +417,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/catalog.js",
-    "groupTitle": "Catalog"
+    "groupTitle": "Catalog",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/catalog/:id"
+      }
+    ]
   },
   {
     "type": "get",
@@ -413,7 +485,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/catalog.js",
-    "groupTitle": "Catalog"
+    "groupTitle": "Catalog",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/catalog/?limit&skip&name"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -461,7 +538,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/catalog.js",
-    "groupTitle": "Catalog"
+    "groupTitle": "Catalog",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/catalog/:id"
+      }
+    ]
   },
   {
     "type": "put",
@@ -565,7 +647,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/catalog.js",
-    "groupTitle": "Catalog"
+    "groupTitle": "Catalog",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/catalog/"
+      }
+    ]
   },
   {
     "type": "post",
@@ -690,7 +777,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/customer.js",
-    "groupTitle": "Customer"
+    "groupTitle": "Customer",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/customer/addcard"
+      }
+    ]
   },
   {
     "type": "post",
@@ -780,7 +872,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/customer.js",
-    "groupTitle": "Customer"
+    "groupTitle": "Customer",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/customer/addshippingaddress"
+      }
+    ]
   },
   {
     "type": "post",
@@ -842,7 +939,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/customer.js",
-    "groupTitle": "Customer"
+    "groupTitle": "Customer",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/customer/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -891,7 +993,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/customer.js",
-    "groupTitle": "Customer"
+    "groupTitle": "Customer",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/customer/email/:email"
+      }
+    ]
   },
   {
     "type": "get",
@@ -939,7 +1046,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/customer.js",
-    "groupTitle": "Customer"
+    "groupTitle": "Customer",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/customer/:id"
+      }
+    ]
   },
   {
     "type": "get",
@@ -974,7 +1086,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/customer.js",
-    "groupTitle": "Customer"
+    "groupTitle": "Customer",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/customer/?limit&skip"
+      }
+    ]
   },
   {
     "type": "post",
@@ -1030,7 +1147,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/customer.js",
-    "groupTitle": "Customer"
+    "groupTitle": "Customer",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/customer/login"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -1078,7 +1200,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/customer.js",
-    "groupTitle": "Customer"
+    "groupTitle": "Customer",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/customer/:id"
+      }
+    ]
   },
   {
     "type": "put",
@@ -1147,7 +1274,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/customer.js",
-    "groupTitle": "Customer"
+    "groupTitle": "Customer",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/customer/"
+      }
+    ]
   },
   {
     "type": "post",
@@ -1202,7 +1334,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/customer.js",
-    "groupTitle": "Customer"
+    "groupTitle": "Customer",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/customer/updatepassword/"
+      }
+    ]
   },
   {
     "type": "post",
@@ -1355,7 +1492,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/order.js",
-    "groupTitle": "Order"
+    "groupTitle": "Order",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/order/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1403,7 +1545,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/order.js",
-    "groupTitle": "Order"
+    "groupTitle": "Order",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/order/:id"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1438,7 +1585,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/order.js",
-    "groupTitle": "Order"
+    "groupTitle": "Order",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/order/?limit&skip"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -1486,7 +1638,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/order.js",
-    "groupTitle": "Order"
+    "groupTitle": "Order",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/order/:id"
+      }
+    ]
   },
   {
     "type": "put",
@@ -1555,7 +1712,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/order.js",
-    "groupTitle": "Order"
+    "groupTitle": "Order",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/order/"
+      }
+    ]
   },
   {
     "type": "post",
@@ -1564,127 +1726,128 @@ define({ "api": [
     "description": "<p>create a product</p> ",
     "name": "create",
     "group": "Product",
-    "parameter": {
+    "success": {
       "fields": {
-        "Parameter": [
+        "Success 200": [
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "name",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "price",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "quantityAvailable",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "quantitySold",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "thumbnailUri",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Boolean</p> ",
             "optional": false,
             "field": "available",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String[]</p> ",
             "optional": false,
             "field": "categories",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "description",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Object[]</p> ",
             "optional": false,
             "field": "mediaFiles",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "mediaFiles.type",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "mediaFiles.uri",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Object</p> ",
             "optional": false,
             "field": "physicalProduct",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "physicalProduct.height",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "physicalProduct.length",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "physicalProduct.weight",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "physicalProduct.width",
             "description": ""
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "physicalProduct.volume",
+            "description": ""
+          },
           {
             "group": "Success 200",
             "optional": false,
@@ -1708,7 +1871,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/product.js",
-    "groupTitle": "Product"
+    "groupTitle": "Product",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/product/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1735,8 +1903,121 @@ define({ "api": [
         "Success 200": [
           {
             "group": "Success 200",
+            "type": "<p>String</p> ",
             "optional": false,
-            "field": "Product",
+            "field": "name",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "price",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "quantityAvailable",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "quantitySold",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "thumbnailUri",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Boolean</p> ",
+            "optional": false,
+            "field": "available",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String[]</p> ",
+            "optional": false,
+            "field": "categories",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "description",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "mediaFiles",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "mediaFiles.type",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "mediaFiles.uri",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object</p> ",
+            "optional": false,
+            "field": "physicalProduct",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "physicalProduct.height",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "physicalProduct.length",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "physicalProduct.weight",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "physicalProduct.width",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "physicalProduct.volume",
             "description": ""
           }
         ]
@@ -1756,7 +2037,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/product.js",
-    "groupTitle": "Product"
+    "groupTitle": "Product",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/product/:id"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1770,9 +2056,129 @@ define({ "api": [
         "Success 200": [
           {
             "group": "Success 200",
+            "type": "<p>Object[]</p> ",
             "optional": false,
-            "field": "200",
-            "description": "<p>Success</p> "
+            "field": "products",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.name",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "product.price",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "product.quantityAvailable",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "product.quantitySold",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.thumbnailUri",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Boolean</p> ",
+            "optional": false,
+            "field": "product.available",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String[]</p> ",
+            "optional": false,
+            "field": "product.categories",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.description",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "product.mediaFiles",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.mediaFiles.type",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "product.mediaFiles.uri",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object</p> ",
+            "optional": false,
+            "field": "product.physicalProduct",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "product.physicalProduct.height",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "product.physicalProduct.length",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "product.physicalProduct.weight",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "product.physicalProduct.width",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "product.physicalProduct.volume",
+            "description": ""
           }
         ]
       }
@@ -1791,7 +2197,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/product.js",
-    "groupTitle": "Product"
+    "groupTitle": "Product",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/product/?limit&skip&priceFrom&priceTo&category"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -1839,59 +2250,16 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/product.js",
-    "groupTitle": "Product"
-  },
-  {
-    "type": "post",
-    "url": "/product/search/",
-    "title": "search",
-    "description": "<p>search for a product</p> ",
-    "name": "search",
-    "group": "Product",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "<p>String</p> ",
-            "optional": false,
-            "field": "query",
-            "description": ""
-          }
-        ]
+    "groupTitle": "Product",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/product/:id"
       }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "optional": false,
-            "field": "Success",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "Product",
-            "description": "<p>not found</p> "
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "lib/models/user.js",
-    "groupTitle": "Product"
+    ]
   },
   {
     "type": "get",
-    "url": "/product/setasavailable/:id",
+    "url": "/product/setAsAvailable/:id",
     "title": "set as available",
     "description": "<p>set the product as available</p> ",
     "name": "setAsAvailable",
@@ -1935,11 +2303,16 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/product.js",
-    "groupTitle": "Product"
+    "groupTitle": "Product",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/product/setAsAvailable/:id"
+      }
+    ]
   },
   {
     "type": "get",
-    "url": "/product/setasaunvailable/:id",
+    "url": "/product/setAsaUnvailable/:id",
     "title": "set as unavailable",
     "description": "<p>set the product as unavailable</p> ",
     "name": "setAsUnAvailable",
@@ -1983,7 +2356,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/product.js",
-    "groupTitle": "Product"
+    "groupTitle": "Product",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/product/setAsaUnvailable/:id"
+      }
+    ]
   },
   {
     "type": "put",
@@ -1992,138 +2370,128 @@ define({ "api": [
     "description": "<p>update an product</p> ",
     "name": "update",
     "group": "Product",
-    "parameter": {
+    "success": {
       "fields": {
-        "Parameter": [
+        "Success 200": [
           {
-            "group": "Parameter",
-            "type": "<p>String</p> ",
-            "optional": false,
-            "field": "id",
-            "description": ""
-          },
-          {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "name",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "price",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "quantityAvailable",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "quantitySold",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "thumbnailUri",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Boolean</p> ",
             "optional": false,
             "field": "available",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String[]</p> ",
             "optional": false,
             "field": "categories",
             "description": ""
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "description",
             "description": ""
-          }
-        ],
-        "mediaFiles": [
+          },
           {
-            "group": "mediaFiles",
+            "group": "Success 200",
             "type": "<p>Object[]</p> ",
             "optional": false,
             "field": "mediaFiles",
             "description": ""
           },
           {
-            "group": "mediaFiles",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "mediaFiles.type",
             "description": ""
           },
           {
-            "group": "mediaFiles",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "mediaFiles.uri",
             "description": ""
-          }
-        ],
-        "physicalProduct": [
+          },
           {
-            "group": "physicalProduct",
+            "group": "Success 200",
             "type": "<p>Object</p> ",
             "optional": false,
             "field": "physicalProduct",
             "description": ""
           },
           {
-            "group": "physicalProduct",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "physicalProduct.height",
             "description": ""
           },
           {
-            "group": "physicalProduct",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "physicalProduct.length",
             "description": ""
           },
           {
-            "group": "physicalProduct",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "physicalProduct.weight",
             "description": ""
           },
           {
-            "group": "physicalProduct",
+            "group": "Success 200",
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "physicalProduct.width",
             "description": ""
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "physicalProduct.volume",
+            "description": ""
+          },
           {
             "group": "Success 200",
             "optional": false,
@@ -2147,7 +2515,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/product.js",
-    "groupTitle": "Product"
+    "groupTitle": "Product",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/product/"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2202,7 +2575,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/product.js",
-    "groupTitle": "Product"
+    "groupTitle": "Product",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/product/updateprice/"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2285,7 +2663,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/user.js",
-    "groupTitle": "User"
+    "groupTitle": "User",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/user/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2334,7 +2717,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/user.js",
-    "groupTitle": "User"
+    "groupTitle": "User",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/user/email/:email"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2398,11 +2786,16 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/user.js",
-    "groupTitle": "User"
+    "groupTitle": "User",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/user/:id"
+      }
+    ]
   },
   {
     "type": "get",
-    "url": "/user/?limit&skip",
+    "url": "/user/?limit&skip&name&username&email&active&role",
     "title": "list",
     "description": "<p>list all users</p> ",
     "name": "list",
@@ -2433,7 +2826,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/user.js",
-    "groupTitle": "User"
+    "groupTitle": "User",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/user/?limit&skip&name&username&email&active&role"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2489,7 +2887,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/user.js",
-    "groupTitle": "User"
+    "groupTitle": "User",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/user/login"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -2537,7 +2940,12 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/user.js",
-    "groupTitle": "User"
+    "groupTitle": "User",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/user/:id"
+      }
+    ]
   },
   {
     "type": "put",
@@ -2553,29 +2961,36 @@ define({ "api": [
             "group": "Parameter",
             "type": "<p>String</p> ",
             "optional": false,
-            "field": "id",
-            "description": ""
-          },
-          {
-            "group": "Parameter",
-            "type": "<p>String</p> ",
-            "optional": false,
-            "field": "email",
-            "description": ""
-          },
-          {
-            "group": "Parameter",
-            "type": "<p>String</p> ",
-            "optional": false,
             "field": "name",
-            "description": ""
+            "description": "<p>User full name</p> "
           },
           {
             "group": "Parameter",
             "type": "<p>String</p> ",
+            "optional": true,
+            "field": "email",
+            "description": "<p>User email</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": true,
+            "field": "username",
+            "defaultValue": "email",
+            "description": "<p>Username, to login, fill this field with email if not passed</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "allowedValues": [
+              "\"WAITER\"",
+              "\"CASHIER\"",
+              "\"ADMIN\"",
+              "\"PRODUCER\""
+            ],
             "optional": false,
-            "field": "password",
-            "description": ""
+            "field": "role",
+            "description": "<p>Role</p> "
           }
         ]
       }
@@ -2606,6 +3021,11 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "lib/models/user.js",
-    "groupTitle": "User"
+    "groupTitle": "User",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:8080/user/"
+      }
+    ]
   }
 ] });
